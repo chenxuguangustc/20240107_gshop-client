@@ -26,6 +26,7 @@
     <!--头部第二行 搜索区域-->
     <div class="bottom">
       <h1 class="logoArea">
+        <!-- 声明式导航 -->
         <router-link class="logo" to="/">
           <img src="./images/logo.png" alt="logo" />
         </router-link>
@@ -50,6 +51,14 @@
 <script>
 export default {
   name: "Header",
+
+  // methods: {
+  //   search() {
+  //     // 编程式路由跳转
+  //     this.$router.push('/search')
+  //   }
+  // },
+
   data() {
     return {
       keyword: "",
@@ -62,6 +71,9 @@ export default {
       this.$router.push({
         name: "search",
         params: { keyword: this.keyword },
+        query: {
+          keyword2: this.keyword.toUpperCase()
+        }
       });
     },
   },

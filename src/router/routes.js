@@ -13,7 +13,8 @@ export default [
   },
 
   {
-    path: '/search',
+    name: 'search',
+    path: '/search/:keyword',
     component: Search
   },
 
