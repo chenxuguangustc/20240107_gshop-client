@@ -20,11 +20,17 @@ export default [
 
   {
     path: '/register',
-    component: Register
+    component: Register,
+    meta: { // 需要隐藏footer的路由添加此配置
+      isHideFooter: true
+    }
   },
 
   {
     path: '/login',
-    component: Login
+    component: Login,
+    meta: {
+      isHideFooter: true
+    }
   }
 ]
