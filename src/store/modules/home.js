@@ -1,5 +1,5 @@
 /* 
-vuex管理的home模块
+管理首页相关数据的vuex子模块
 */
 import {reqBaseCategoryList} from '@/api'
 
