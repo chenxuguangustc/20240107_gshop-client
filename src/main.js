@@ -17,4 +17,4 @@ new Vue({
 
 // store对象的功能，组件跟vuex交互就是靠这个对象
 // 读数据：store.state.xxx  2、store.getters.yyy
-// 更新数据：1、要触发action调用 store.dispatch(action, data) 2、触发mutations的调用 Store.commit(mutation名称，data)
+// 更新数据：1、要触发action调用 store.dispatch(action, data) 2、触发mutations的调用 Store.commit(mutation名称，data)   

@@ -21,6 +21,7 @@ export default {
     //   console.log(result)
     // })
 
+    // 分发请求获取分类列表的异步action
     this.$store.dispatch('getBaseCategoryList')
   },
 

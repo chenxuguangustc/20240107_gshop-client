@@ -17,7 +17,7 @@ import modules from './modules'
 Vue.use(Vuex)
 
 // const mutations = {
-//   xxx (state) {
+//   xxx (state) { state是总的状态
 
 //   }
 // }
@@ -35,5 +35,16 @@ Vue.use(Vuex)
 // }
 // 向外暴露store对象
 export default new Vuex.Store({
-  modules, // 配置store的所有模块
+  modules,// 配置store的所有模块
 })
+
+// vuex多模块编程的总状态结构：里面的是子模块
+// {
+//   home:{
+//     categoryList: []
+//   },
+
+//   uesr: {
+//     userInfo: {}
+//   }
+// }
